@@ -1,0 +1,50 @@
+body {
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    background:  #1a2f1a url(wood.jpg) no-repeat right ; 
+
+    background-size:700px auto;
+    background-attachment: local;
+
+}
+h1{
+   
+    text-align: left;
+    font-weight: normal;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+/* Адаптивность для телефонов */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+        background: #1a2f1a url(wood.jpg) no-repeat right center;
+        background-size: 300px auto;
+        padding-right: 320px; /* Отступ для фото */
+    }
+    
+    #index, #about, #Flora_and_fauna, .reviews {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    p, li {
+        font-size: 1rem;
+    }
+    
+    br {
+        display: none; /* Убираем принудительные переносы на телефоне */
+    }
+}
