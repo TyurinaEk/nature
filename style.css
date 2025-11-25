@@ -17,9 +17,12 @@ h1{
 @media (max-width: 768px) {
     body {
         padding: 15px;
-        background: #1a2f1a url(wood.jpg) no-repeat right center;
-        background-size: 300px auto;
-        padding-right: 320px; /* Отступ для фото */
+        background: #1a2f1a; /* Убираем фото на телефонах */
+        background-size: cover;
+    }
+    #index{
+       background:  url(wood.jpg) no-repeat center;
+       background-size: contain;
     }
     
     #index, #about, #Flora_and_fauna, .reviews {
